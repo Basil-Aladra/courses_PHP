@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.tailwindcss.com/2.2.19/tailwind.min.css" rel="stylesheet">
+    <title>Login</title>
+</head>
+<body class="bg-gradient-to-r from-green-50 to-green-100">
+<section class="relative py-10  sm:py-16 lg:py-36">
+<div class="relative max-w-lg px-4 mx-auto sm:px-0">
+            <div class="overflow-hidden bg-white rounded-md shadow-2xl">
+                <div class="px-4 py-6 sm:px-8 sm:py-7">
+                    <div class="text-center">
+                        <h2 class="text-3xl font-bold text-gray-900">SignIn</h2>
+                    </div>
+                    <form action="login_log.php" method="post" class="mt-8">
+                        <div class="space-y-5">
+                            <div>
+                                <label class="text-base font-medium text-gray-900">User Name</label>
+                                <div class="mt-2.5">
+                                    <input type="text" name="Lname"   class="block w-full p-4 border-solid border border-green-600  text-black placeholder-gray-500 transition-all duration-200 bg-white rounded-md focus:outline-none focus:border-green-600 caret-green-600" />
+                                </div>
+                            </div>
+    
+                            <div>
+                                <label class="text-base font-medium text-gray-900">Password</label>
+                                <div class="mt-2.5">
+                                    <input type="password" name="Lpass"  class="block w-full p-4 text-black border-solid border border-green-600 placeholder-gray-500 transition-all duration-200 bg-white  rounded-md focus:outline-none focus:border-green-600 caret-green-600" />
+                                </div>
+                            </div>
+    
+                            <div>
+                                <input type="submit" value="login" class="inline-flex items-center justify-center w-full px-4 py-4 font-bold text-sm text-white transition-all shadow-lg duration-200 bg-gradient-to-r from-green-300 to-emerald-500  border-transparent rounded-md focus:outline-none">
+                            </div>
+
+                            <div class="text-center underline ">
+                                <a href="register.html" class="text-blue-700 hover:text-blue-500">Create a new account</a>
+                            </div>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

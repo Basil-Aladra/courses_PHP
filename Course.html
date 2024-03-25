@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Courses</title>
+</head>
+<body>
+    <div class="Group1957 w-[1440px] h-[66.10px] left-0 top-0 absolute">
+        <div class="Rectangle1 w-[1520px] h-[66.10px] left-0 top-0 absolute bg-white shadow"></div>
+        <div class="Frame3 w-[457px] h-[20.06px] left-[458px] top-[28px] absolute justify-center items-center gap-[16.47px] inline-flex">
+          <a href="index.php" class="Home text-gray-900 text-sm font-normal">Home</a>
+          <a href="Course.html" class="Course text-indigo-500 text-sm font-bold">Course</a>
+          <a href="About.html" class="AboutUs text-gray-900 text-sm font-normal">About Us</a>
+          <a href="Article.html" class="Article text-gray-900 text-sm font-normal">Article</a>
+          <a href="contact.php" class="Contact text-gray-900 text-sm font-normal">Contact</a>
+        </div>
+        <a href="register.html" class="Frame1 w-[110px] h-[30px] px-[20.18px] py-[5.35px] left-[1305px] top-[18px] absolute bg-indigo-500 rounded justify-center items-center gap-[4.12px] inline-flex">
+          <span class="Register text-white text-xs font-bold">Register</span>
+        </a>
+        <a href="login.php" class="Frame2 w-[110px] h-[30px] px-[20.18px] py-[5.35px] left-[1181px] top-[18px] absolute rounded border border-indigo-500 justify-center items-center gap-[4.12px] inline-flex">
+          <span class="LogIn text-indigo-500 text-xs font-bold ">Log in</span>
+        </a>
+      </div>
+      <div class="Group4 left-[81px] top-[23px] absolute">
+        <div class="PlayVideo left-[27.75px] top-[2.91px] absolute text-slate-900 text-base font-bold">logo</div>
+        <div class="Group3 w-[22.88px] h-[22.88px] left-0 top-0 absolute">
+        </div>
+      </div>
+      
+    <!-- Features -->
+<div class="overflow-hidden mt-7">
+    <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+      <!-- Title -->
+      <div class="mx-auto max-w-2xl mb-8 lg:mb-14 text-center">
+        <h2 class="text-3xl lg:text-4xl text-gray-800 font-bold dark:text-gray-200">
+            The total number of courses offered to our subscribers.
+        </h2>
+      </div>
+      <!-- End Title -->
+      
+      <div class="relative xl:w-10/12 xl:mx-auto ">
+        <!-- Grid -->
+        <div class="border-b-2 border-gray-200 dark:border-gray-700 mb-5 w-60">
+          <nav class="-mb-0.5 flex space-x-6">
+            <a href="Courses.php" class="py-4 px-1 inline-flex items-center gap-2 border-b-2 border-transparent text-sm whitespace-nowrap text-gray-500 hover:text-blue-600 focus:outline-none focus:text-blue-600">
+              Courses
+            </a>
+            
+            <button class="py-4 px-1 inline-flex items-center gap-2 border-b-2 border-transparent text-sm whitespace-nowrap text-gray-500 hover:text-blue-600 focus:outline-none focus:text-blue-600"
+           onclick="my_modal_2.showModal()">Add Course</button>
+                  <form action="add_Course.php" method="post">
+                    <dialog id="my_modal_2" class="modal">
+                      <div class="modal-box  border-b-2 border-blue-500">
+                        <h3 class="font-bold text-lg">Hello!</h3>
+                        <p class="py-4 border-3 border-b-2 border-gray-200 dark:border-gray-700">Please fill out the information to take the course</p>
+                        <div class="flex justify-between items-center">
+                          <label  class="block text-sm font-medium mb-2 dark:text-white">Course name</label>
+                        </div>
+                        <input name="course_name" id="course_name" class="py-3 px-4 block w-full border-2 border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-blue-500 dark:border-blue-500 dark:text-blue-500 dark:focus:ring-blue-500" >
+  
+                        <div class="flex justify-between items-center">
+                          <label class="block text-sm font-medium mb-2 dark:text-white">Price</label>
+                        </div>
+                        <input name="price" id="price" class="py-3 px-4 block w-full border-2 border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-blue-500 dark:border-blue-500 dark:text-blue-500 dark:focus:ring-blue-500" >
+  
+                        <div class="flex justify-between items-center">
+                          <label class="block text-sm font-medium mb-2 dark:text-white">date of registration</label>
+                        </div>
+                        <input name="d_of_reg" id="d_of_reg" class="py-3 px-4 block w-full border-2 border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-blue-500 dark:border-blue-500 dark:text-blue-500 dark:focus:ring-blue-500" >
+  
+                        <div class="flex justify-end  ">
+                          <button type="submit" class="py-3 mt-5 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-100 text-blue-800 hover:bg-blue-200 disabled:opacity-50 disabled:pointer-events-none dark:hover:bg-blue-900 dark:text-blue-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
+                            Add
+                          </button>
+                        </div>
+                      </div>
+           <form method="dialog" class="modal-backdrop">
+              <button>close</button>
+            </form>
+           
+            </dialog>
+            
+                  </form>
+          </nav>
+          
+        </div>
+         
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
+          <div>
+            <!-- Card -->
+            <div class="hover:shadow-xl hover:shadow-indigo-200 p-4 relative z-10 bg-white border rounded-xl md:p-10 dark:bg-slate-900 dark:border-gray-700">
+              <h3 class="text-xl font-bold text-gray-800 dark:text-gray-200">HTML & CSS</h3>
+              <div class="text-sm text-gray-500">Front End & Back End</div>
+  
+              <div class="mt-5">
+                <span class="text-6xl font-bold text-gray-800 dark:text-gray-200">$18</span>
+                <span class="text-lg font-bold text-gray-800 dark:text-gray-200">.00</span>
+                <span class="ms-3 text-gray-500">USD / monthly</span>
+              </div>
+  
+              <div class="mt-5 grid sm:grid-cols-2 gap-y-2 py-4 first:pt-0 last:pb-0 sm:gap-x-6 sm:gap-y-0">
+                <!-- List -->
+                <ul class="space-y-2 text-sm sm:text-base">
+                  <li class="flex space-x-3">
+                    <span class="mt-0.5 h-5 w-5 flex justify-center items-center rounded-full bg-blue-50 text-blue-600 dark:bg-blue-800/30 dark:text-blue-500">
+                      <svg class="flex-shrink-0 h-3.5 w-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                    </span>
+                    <span class="text-gray-800 dark:text-gray-200">
+                      Up to 10 people
+                    </span>
+                  </li>
+  
+                  <li class="flex space-x-3">
+                    <span class="mt-0.5 h-5 w-5 flex justify-center items-center rounded-full bg-blue-50 text-blue-600 dark:bg-blue-800/30 dark:text-blue-500">
+                      <svg class="flex-shrink-0 h-3.5 w-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                    </span>
+                    <span class="text-gray-800 dark:text-gray-200">
+                      Collect data
+                    </span>
+                  </li>
+  
+                  <li class="flex space-x-3">
+                    <span class="mt-0.5 h-5 w-5 flex justify-center items-center rounded-full bg-blue-50 text-blue-600 dark:bg-blue-800/30 dark:text-blue-500">
+                      <svg class="flex-shrink-0 h-3.5 w-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                    </span>
+                    <span class="text-gray-800 dark:text-gray-200">
+                      Code extensibility
+                    </span>
+                  </li>
+                </ul>
+                <!-- End List -->
+  
+                <!-- List -->
+                <ul class="space-y-2 text-sm sm:text-base">
+                  <li class="flex space-x-3">
+                    <span class="h-5 w-5 flex justify-center items-center rounded-full bg-gray-50 text-gray-500 dark:bg-gray-800">
+                      <svg class="flex-shrink-0 h-3.5 w-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+                    </span>
+                    <span class="text-gray-800 dark:text-gray-200">
+                      Custom reports
+                    </span>
+                  </li>
+  
+                  <li class="flex space-x-3">
+                    <span class="h-5 w-5 flex justify-center items-center rounded-full bg-gray-50 text-gray-500 dark:bg-gray-800">
+                      <svg class="flex-shrink-0 h-3.5 w-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+                    </span>
+                    <span class="text-gray-800 dark:text-gray-200">
+                      Product support
+                    </span>
+                  </li>
+  
+                  <li class="flex space-x-3">
+                    <span class="h-5 w-5 flex justify-center items-center rounded-full bg-gray-50 text-gray-500 dark:bg-gray-800">
+                      <svg class="flex-shrink-0 h-3.5 w-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+                    </span>
+                    <span class="text-gray-800 dark:text-gray-200">
+                      Activity reporting
+                    </span>
+                  </li>
+                </ul>
+                <!-- End List -->
+              </div>
+  
+              <div class="mt-5 grid grid-cols-2 gap-x-4 py-4 first:pt-0 last:pb-0">
+                <div>
+                  <p class="text-sm text-gray-500">Cancel anytime.</p>
+                  <p class="text-sm text-gray-500">No card required.</p>
+                </div>
+  
+                
+              </div>
+            </div>
+            <!-- End Card -->
+          </div>
+  
+          <div>
+            <!-- Card -->
+            <div class="hover:shadow-xl hover:shadow-indigo-200 p-5 relative z-10 bg-white border rounded-xl md:p-10 dark:bg-slate-900 dark:border-gray-700 dark:shadow-gray-900/[.2]">
+              <h3 class="text-xl font-bold text-gray-800 dark:text-gray-200">javascript</h3>
+              <div class="text-sm text-gray-500">For growing businesses.</div>
+  
+              <div class="mt-5">
+                <span class="text-6xl font-bold text-gray-800 dark:text-gray-200">$36</span>
+                <span class="text-lg font-bold text-gray-800 dark:text-gray-200">.99</span>
+                <span class="ms-3 text-gray-500">USD / monthly</span>
+              </div>
+  
+              <div class="mt-5 grid sm:grid-cols-2 gap-y-2 py-4 first:pt-0 last:pb-0 sm:gap-x-6 sm:gap-y-0">
+                <!-- List -->
+                <ul class="space-y-2 text-sm sm:text-base">
+                  <li class="flex space-x-3">
+                    <span class="mt-0.5 h-5 w-5 flex justify-center items-center rounded-full bg-blue-50 text-blue-600 dark:bg-blue-800/30 dark:text-blue-500">
+                      <svg class="flex-shrink-0 h-3.5 w-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                    </span>
+                    <span class="text-gray-800 dark:text-gray-200">
+                      Up to 10 people
+                    </span>
+                  </li>
+  
+                  <li class="flex space-x-3">
+                    <span class="mt-0.5 h-5 w-5 flex justify-center items-center rounded-full bg-blue-50 text-blue-600 dark:bg-blue-800/30 dark:text-blue-500">
+                      <svg class="flex-shrink-0 h-3.5 w-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                    </span>
+                    <span class="text-gray-800 dark:text-gray-200">
+                      Collect data
+                    </span>
+                  </li>
+  
+                  <li class="flex space-x-3">
+                    <span class="mt-0.5 h-5 w-5 flex justify-center items-center rounded-full bg-blue-50 text-blue-600 dark:bg-blue-800/30 dark:text-blue-500">
+                      <svg class="flex-shrink-0 h-3.5 w-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                    </span>
+                    <span class="text-gray-800 dark:text-gray-200">
+                      Code extensibility
+                    </span>
+                  </li>
+                </ul>
+                <!-- End List -->
+  
+                <!-- List -->
+                <ul class="space-y-2 text-sm sm:text-base">
+                  <li class="flex space-x-3">
+                    <span class="mt-0.5 h-5 w-5 flex justify-center items-center rounded-full bg-blue-50 text-blue-600 dark:bg-blue-800/30 dark:text-blue-500">
+                      <svg class="flex-shrink-0 h-3.5 w-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                    </span>
+                    <span class="text-gray-800 dark:text-gray-200">
+                      Custom reports
+                    </span>
+                  </li>
+  
+                  <li class="flex space-x-3">
+                    <span class="mt-0.5 h-5 w-5 flex justify-center items-center rounded-full bg-blue-50 text-blue-600 dark:bg-blue-800/30 dark:text-blue-500">
+                      <svg class="flex-shrink-0 h-3.5 w-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                    </span>
+                    <span class="text-gray-800 dark:text-gray-200">
+                      Product support
+                    </span>
+                  </li>
+  
+                  <li class="flex space-x-3">
+                    <span class="mt-0.5 h-5 w-5 flex justify-center items-center rounded-full bg-blue-50 text-blue-600 dark:bg-blue-800/30 dark:text-blue-500">
+                      <svg class="flex-shrink-0 h-3.5 w-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                    </span>
+                    <span class="text-gray-800 dark:text-gray-200">
+                      Activity reporting
+                    </span>
+                  </li>
+                </ul>
+                <!-- End List -->
+              </div>
+  
+              <div class="mt-5 grid grid-cols-2 gap-x-4 py-4 first:pt-0 last:pb-0">
+                <div>
+                  <p class="text-sm text-gray-500">Cancel anytime.</p>
+                  <p class="text-sm text-gray-500">No card required.</p>
+                </div>
+  
+                <div class="flex justify-end">
+                </div>
+              </div>
+            </div>
+            <!-- End Card -->
+          </div>
+        </div>
+        <!-- End Grid -->
+  
+        <!-- SVG Element -->
+        <div class="hidden md:block absolute top-0 end-0 translate-y-16 translate-x-16">
+          <svg class="w-16 h-auto text-orange-500" width="121" height="135" viewBox="0 0 121 135" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 16.4754C11.7688 27.4499 21.2452 57.3224 5 89.0164" stroke="currentColor" stroke-width="10" stroke-linecap="round"/>
+            <path d="M33.6761 112.104C44.6984 98.1239 74.2618 57.6776 83.4821 5" stroke="currentColor" stroke-width="10" stroke-linecap="round"/>
+            <path d="M50.5525 130C68.2064 127.495 110.731 117.541 116 78.0874" stroke="currentColor" stroke-width="10" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <!-- End SVG Element -->
+  
+        <!-- SVG Element -->
+        <div class="hidden md:block absolute bottom-0 start-0 translate-y-16 -translate-x-16">
+          <svg class="w-56 h-auto text-cyan-500" width="347" height="188" viewBox="0 0 347 188" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 82.4591C54.7956 92.8751 30.9771 162.782 68.2065 181.385C112.642 203.59 127.943 78.57 122.161 25.5053C120.504 2.2376 93.4028 -8.11128 89.7468 25.5053C85.8633 61.2125 130.186 199.678 180.982 146.248L214.898 107.02C224.322 95.4118 242.9 79.2851 258.6 107.02C274.299 134.754 299.315 125.589 309.861 117.539L343 93.4426" stroke="currentColor" stroke-width="7" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <!-- End SVG Element -->
+      </div>
+
+    </div>
+  </div>
+  <!-- End Features -->
+  
+
+  
+  <div class="overflow-hidden mt-7">
+    <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+  
+      <div class="relative xl:w-10/12 xl:mx-auto">
+        <!-- Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
+          <div>
+            <!-- Card -->
+            <div class="hover:shadow-xl hover:shadow-indigo-200 p-4 relative z-10 bg-white border rounded-xl md:p-10 dark:bg-slate-900 dark:border-gray-700">
+              <h3 class="text-xl font-bold text-gray-800 dark:text-gray-200">Fotographer</h3>
+              <div class="text-sm text-gray-500">Front End & Back End</div>
+  
+              <div class="mt-5">
+                <span class="text-6xl font-bold text-gray-800 dark:text-gray-200">$18</span>
+                <span class="text-lg font-bold text-gray-800 dark:text-gray-200">.00</span>
+                <span class="ms-3 text-gray-500">USD / monthly</span>
+              </div>
+  
+              <div class="mt-5 grid sm:grid-cols-2 gap-y-2 py-4 first:pt-0 last:pb-0 sm:gap-x-6 sm:gap-y-0">
+                <!-- List -->
+                <ul class="space-y-2 text-sm sm:text-base">
+                  <li class="flex space-x-3">
+                    <span class="mt-0.5 h-5 w-5 flex justify-center items-center rounded-full bg-blue-50 text-blue-600 dark:bg-blue-800/30 dark:text-blue-500">
+                      <svg class="flex-shrink-0 h-3.5 w-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                    </span>
+                    <span class="text-gray-800 dark:text-gray-200">
+                      Up to 10 people
+                    </span>
+                  </li>
+  
+                  <li class="flex space-x-3">
+                    <span class="mt-0.5 h-5 w-5 flex justify-center items-center rounded-full bg-blue-50 text-blue-600 dark:bg-blue-800/30 dark:text-blue-500">
+                      <svg class="flex-shrink-0 h-3.5 w-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                    </span>
+                    <span class="text-gray-800 dark:text-gray-200">
+                      Collect data
+                    </span>
+                  </li>
+  
+                  <li class="flex space-x-3">
+                    <span class="mt-0.5 h-5 w-5 flex justify-center items-center rounded-full bg-blue-50 text-blue-600 dark:bg-blue-800/30 dark:text-blue-500">
+                      <svg class="flex-shrink-0 h-3.5 w-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                    </span>
+                    <span class="text-gray-800 dark:text-gray-200">
+                      Code extensibility
+                    </span>
+                  </li>
+                </ul>
+                <!-- End List -->
+  
+                <!-- List -->
+                <ul class="space-y-2 text-sm sm:text-base">
+                  <li class="flex space-x-3">
+                    <span class="h-5 w-5 flex justify-center items-center rounded-full bg-gray-50 text-gray-500 dark:bg-gray-800">
+                      <svg class="flex-shrink-0 h-3.5 w-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+                    </span>
+                    <span class="text-gray-800 dark:text-gray-200">
+                      Custom reports
+                    </span>
+                  </li>
+  
+                  <li class="flex space-x-3">
+                    <span class="h-5 w-5 flex justify-center items-center rounded-full bg-gray-50 text-gray-500 dark:bg-gray-800">
+                      <svg class="flex-shrink-0 h-3.5 w-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+                    </span>
+                    <span class="text-gray-800 dark:text-gray-200">
+                      Product support
+                    </span>
+                  </li>
+  
+                  <li class="flex space-x-3">
+                    <span class="h-5 w-5 flex justify-center items-center rounded-full bg-gray-50 text-gray-500 dark:bg-gray-800">
+                      <svg class="flex-shrink-0 h-3.5 w-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+                    </span>
+                    <span class="text-gray-800 dark:text-gray-200">
+                      Activity reporting
+                    </span>
+                  </li>
+                </ul>
+                <!-- End List -->
+              </div>
+  
+              <div class="mt-5 grid grid-cols-2 gap-x-4 py-4 first:pt-0 last:pb-0">
+                <div>
+                  <p class="text-sm text-gray-500">Cancel anytime.</p>
+                  <p class="text-sm text-gray-500">No card required.</p>
+                </div>
+  
+                <div class="flex justify-end">
+                </div>
+              </div>
+            </div>
+            <!-- End Card -->
+          </div>
+  
+          <div>
+            <!-- Card -->
+            <div class="hover:shadow-xl hover:shadow-indigo-200 p-5 relative z-10 bg-white border rounded-xl md:p-10 dark:bg-slate-900 dark:border-gray-700 dark:shadow-gray-900/[.2]">
+              <h3 class="text-xl font-bold text-gray-800 dark:text-gray-200">Design Grafis</h3>
+              <div class="text-sm text-gray-500">For growing businesses.</div>
+  
+              <div class="mt-5">
+                <span class="text-6xl font-bold text-gray-800 dark:text-gray-200">$36</span>
+                <span class="text-lg font-bold text-gray-800 dark:text-gray-200">.99</span>
+                <span class="ms-3 text-gray-500">USD / monthly</span>
+              </div>
+  
+              <div class="mt-5 grid sm:grid-cols-2 gap-y-2 py-4 first:pt-0 last:pb-0 sm:gap-x-6 sm:gap-y-0">
+                <!-- List -->
+                <ul class="space-y-2 text-sm sm:text-base">
+                  <li class="flex space-x-3">
+                    <span class="mt-0.5 h-5 w-5 flex justify-center items-center rounded-full bg-blue-50 text-blue-600 dark:bg-blue-800/30 dark:text-blue-500">
+                      <svg class="flex-shrink-0 h-3.5 w-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                    </span>
+                    <span class="text-gray-800 dark:text-gray-200">
+                      Up to 10 people
+                    </span>
+                  </li>
+  
+                  <li class="flex space-x-3">
+                    <span class="mt-0.5 h-5 w-5 flex justify-center items-center rounded-full bg-blue-50 text-blue-600 dark:bg-blue-800/30 dark:text-blue-500">
+                      <svg class="flex-shrink-0 h-3.5 w-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                    </span>
+                    <span class="text-gray-800 dark:text-gray-200">
+                      Collect data
+                    </span>
+                  </li>
+  
+                  <li class="flex space-x-3">
+                    <span class="mt-0.5 h-5 w-5 flex justify-center items-center rounded-full bg-blue-50 text-blue-600 dark:bg-blue-800/30 dark:text-blue-500">
+                      <svg class="flex-shrink-0 h-3.5 w-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                    </span>
+                    <span class="text-gray-800 dark:text-gray-200">
+                      Code extensibility
+                    </span>
+                  </li>
+                </ul>
+                <!-- End List -->
+  
+                <!-- List -->
+                <ul class="space-y-2 text-sm sm:text-base">
+                  <li class="flex space-x-3">
+                    <span class="mt-0.5 h-5 w-5 flex justify-center items-center rounded-full bg-blue-50 text-blue-600 dark:bg-blue-800/30 dark:text-blue-500">
+                      <svg class="flex-shrink-0 h-3.5 w-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                    </span>
+                    <span class="text-gray-800 dark:text-gray-200">
+                      Custom reports
+                    </span>
+                  </li>
+  
+                  <li class="flex space-x-3">
+                    <span class="mt-0.5 h-5 w-5 flex justify-center items-center rounded-full bg-blue-50 text-blue-600 dark:bg-blue-800/30 dark:text-blue-500">
+                      <svg class="flex-shrink-0 h-3.5 w-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                    </span>
+                    <span class="text-gray-800 dark:text-gray-200">
+                      Product support
+                    </span>
+                  </li>
+  
+                  <li class="flex space-x-3">
+                    <span class="mt-0.5 h-5 w-5 flex justify-center items-center rounded-full bg-blue-50 text-blue-600 dark:bg-blue-800/30 dark:text-blue-500">
+                      <svg class="flex-shrink-0 h-3.5 w-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                    </span>
+                    <span class="text-gray-800 dark:text-gray-200">
+                      Activity reporting
+                    </span>
+                  </li>
+                </ul>
+                <!-- End List -->
+              </div>
+  
+              <div class="mt-5 grid grid-cols-2 gap-x-4 py-4 first:pt-0 last:pb-0">
+                <div>
+                  <p class="text-sm text-gray-500">Cancel anytime.</p>
+                  <p class="text-sm text-gray-500">No card required.</p>
+                </div>
+  
+                <div class="flex justify-end">
+                </div>
+              </div>
+            </div>
+            <!-- End Card -->
+          </div>
+        </div>
+        <!-- End Grid -->
+  
+        <!-- SVG Element -->
+        
+        <!-- End SVG Element -->
+  
+        <!-- SVG Element -->
+        
+        <!-- End SVG Element -->
+      </div>
+
+    </div>
+  </div>
+  <!-- End Features -->
+</body>
+</html>

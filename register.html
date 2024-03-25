@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.tailwindcss.com/2.2.19/tailwind.min.css" rel="stylesheet">
+    <title>SignIn</title>
+</head>
+<body class="bg-gradient-to-r from-blue-50 to-blue-100">
+<section class="relative py-10  sm:py-16 lg:py-36">
+<div class="relative max-w-lg px-4 mx-auto sm:px-0">
+            <div class="overflow-hidden bg-white rounded-md shadow-2xl">
+                <div class="px-4 py-6 sm:px-8 sm:py-7">
+                    <div class="text-center">
+                        <h2 class="text-3xl font-bold text-gray-900">SignUp</h2>
+                    </div>
+                    <form action="register.php"  method="POST" class="mt-8">
+                        <div class="space-y-5">
+                            <div>
+                                <label  class="text-base font-medium text-gray-900">Name</label>
+                                <div class="mt-2.5">
+                                    <input type="text" name="name" id="name"  class="block w-full p-4 border-solid border border-blue-600  text-black placeholder-gray-500 transition-all duration-200 bg-white rounded-md focus:outline-none focus:border-blue-600 caret-blue-600" />
+                                </div>
+                            </div>
+
+                            <div>
+                                <label  class="text-base font-medium text-gray-900">Email</label>
+                                <div class="mt-2.5">
+                                    <input type="email" name="email" id="email"  class="block w-full p-4 text-black border-solid border border-blue-600 placeholder-gray-500 transition-all duration-200 bg-white  rounded-md focus:outline-none focus:border-blue-600 caret-blue-600" />
+                                </div>
+                            </div>
+    
+                            <div>
+                                <label  class="text-base font-medium text-gray-900">Password</label>
+                                <div class="mt-2.5">
+                                    <input type="password" name="password" id="password"  class="block w-full p-4 text-black border-solid border border-blue-600 placeholder-gray-500 transition-all duration-200 bg-white  rounded-md focus:outline-none focus:border-blue-600 caret-blue-600" />
+                                </div>
+                            </div>
+    
+                            <div>
+                                <button type="submit" class="inline-flex items-center justify-center w-full px-4 py-4 font-bold text-sm text-white transition-all shadow-lg duration-200 bg-gradient-to-r from-blue-300 to-emerald-500  border-transparent rounded-md focus:outline-none">SignUp</button>
+                            </div>
+
+                            
+                    </form>
+                    <div class="text-center underline ">
+                        <a href="login.html" class="text-blue-700 hover:text-blue-500">Do you already have an account?</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
+
