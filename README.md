@@ -1,3 +1,3 @@
 This project is a training program designed and programmed using PHP and HTML, along with the Tailwind CSS styling library. The idea behind this project is to display courses on a page that users can view and read details about each course. If a user wants to enroll in a course, they first need to create an account and then log in to be able to register for a course. The page also shows the user the courses they have registered for.
 
-<img align="right" alt="coding" width="300" height="180" style="border-radius:5;" src="[https://art.pixilart.com/sr2712ab0b35ecd.gif](https://raw.githubusercontent.com/MaruanBO/MaruanBO/master/assets/php.gif)https://raw.githubusercontent.com/MaruanBO/MaruanBO/master/assets/php.gif">
+<img align="right" alt="coding" src="https://art.pixilart.com/sr2712ab0b35ecd.gif(https://raw.githubusercontent.com/MaruanBO/MaruanBO/master/assets/php.gif)https://raw.githubusercontent.com/MaruanBO/MaruanBO/master/assets/php.gif">
