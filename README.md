@@ -5,6 +5,4 @@
 
 <img align="center" alt="coding" width="300" height="180" src="https://tailwindcss.com/_next/static/media/tailwindui-small@75.8bb955b2.jpg">
 
-<li>
-  o
-</li>
+
